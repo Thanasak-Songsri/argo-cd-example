@@ -6,4 +6,5 @@ data:
   DB_HOST: mariadb-srv
   DB_PORT: "3306"
   DB_USER: root
+  DB_PASSWORD: password
   DB_DATABASE: todo

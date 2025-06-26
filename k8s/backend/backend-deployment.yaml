@@ -25,5 +25,3 @@ spec:
         envFrom:
           - configMapRef: 
               name: todo-app-configmap
-          - secretRef:
-              name: todo-app-secret
