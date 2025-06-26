@@ -9,20 +9,6 @@ spec:
   rules:
   - http:
       paths:
-      - path: /api
-        pathType: Prefix
-        backend:
-          service:
-            name: backend-srv
-            port:
-              number: 5050
-      - path: /swagger
-        pathType: Prefix
-        backend:
-          service:
-            name: backend-srv
-            port:
-              number: 5050
       - path: /
         pathType: Prefix
         backend:
