@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: k8s 
-    repoURL: 'https://github.com/thetkpark/argo-cd-example'  
+    repoURL: 'https://github.com/Thanasak-Songsri/argo-cd-example'  
     targetRevision: HEAD 
     directory:
       recurse: true 
