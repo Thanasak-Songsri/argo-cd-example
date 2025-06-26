@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: frontend-depl
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: todo-frontend
