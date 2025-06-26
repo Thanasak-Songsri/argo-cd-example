@@ -25,16 +25,14 @@ spec:
         ports:
         - containerPort: 3306
         env:
-          - name: MARIADB_ROOT_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                name: todo-app-secret
-                key: DB_PASSWORD
+          - name: MARIADB_ALLOW_EMPTY_ROOT_PASSWORD
+            value: "yes"
           - name: MARIADB_DATABASE
             valueFrom:
               configMapKeyRef:
                 name: todo-app-configmap
                 key: DB_DATABASE
+
         volumeMounts:
           - name: maria-db-volume
             mountPath: /var/lib/mysql
